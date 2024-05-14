@@ -1,20 +1,27 @@
 $cellSide: 100px;
 .board {
   .grid {
-    width: 9 * $cellSide;
-    height: 9 * $cellSide;
+    width: 9 * $cellSide + 24;
+    height: 9 * $cellSide + 24;
     border: 12px solid black;
 
     display: flex;
     // flex-wrap: wrap;
-    flex-direction: column;
-    .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    // box-sizing: border-box;
+    .section {
+      width: 3 * $cellSide + 8;
+      height: 3 * $cellSide + 8;
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      border: 4px solid black;
+      box-sizing: border-box;
       .cell {
         width: $cellSide;
         height: $cellSide;
-        border: 4px solid black;
+        border: 2px solid black;
         box-sizing: border-box;
         font-size: 75px;
         display: flex;

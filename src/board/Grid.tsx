@@ -1,7 +1,7 @@
 import "./board.scss";
 import { Cell } from "./SmallCell";
 
-const arrayOfRows: number[][] = [
+const arrayOfSection: number[][] = [
   [1, 2, 3, 4, 5, 6, 7, 8, 9],
   [1, 2, 3, 4, 5, 6, 7, 8, 9],
   [1, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -16,9 +16,9 @@ export function Grid() {
   return (
     <div className="board">
       <div className="grid">
-        {arrayOfRows.map((row: any[]) => {
+        {arrayOfSection.map((row: any[]) => {
           return (
-            <div className="row">
+            <div className="section">
               {row.map((cell) => {
                 return <Cell />;
               })}

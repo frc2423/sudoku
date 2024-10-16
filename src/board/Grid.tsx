@@ -20,7 +20,7 @@ export function Grid() {
           return (
             <div className="section">
               {row.map((cell) => {
-                return <Cell />;
+                return <Cell mainNumber={5} />;
               })}
             </div>
           );

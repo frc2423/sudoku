@@ -1,3 +1,6 @@
-export function Cell() {
-  return <div className="cell">5</div>;
+interface CellProps {
+  mainNumber: number;
+}
+export function Cell(props: CellProps) {
+  return <div className="cell">{props.mainNumber}</div>;
 }

@@ -8,6 +8,6 @@ export type CellData = {
   prefilled: boolean;
 };
 
-export type RowData = CellData[];
+export type SectionData = CellData[];
 
-export type BoardData = RowData[];
+export type BoardData = SectionData[];
